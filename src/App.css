@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+img{
+    height: 200px;
+    width: 300px;
+    
+}
+.image3{
+    height: 300px !important;
+    width: 200px !important;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 10%;
+}
+.image{
+    position: relative;
+    border: 4px solid black;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.877);
+    border: 1px solid rgba(255, 255, 255, 0.35); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+img{
+    border-radius: 35px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image:hover{
+    transform: scale(1.75);
+    z-index: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section:hover .image:not(:hover){
+    filter: blur(10px);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    visibility: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.image:hover p{
+    visibility:visible;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.445);
+    border: 1px solid rgba(255, 255, 255, 0.35); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    width: 300px;
+    position: relative;
+    left: 550px;
+    padding: 5px;
+    margin: 50px;
+}
+section{
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.877);
+    border: 1px solid rgba(255, 255, 255, 0.35); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 25px;
+}
+footer{
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.877);
+    border: 1px solid rgba(255, 255, 255, 0.35); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 50px 20%;
+    padding: 25px;
+    border-radius: 35px;
+    font-size: 20px;
+}
+div p{
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.877);
+    border: 1px solid rgba(255, 255, 255, 0.35); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 35px;
 }
